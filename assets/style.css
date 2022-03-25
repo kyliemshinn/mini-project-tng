@@ -3,7 +3,7 @@ html {
     color: #cecece;
     background-color: #404040;
 }
-
+/*when the page shrinks the content boxes wrap down to the next line.*/
 main {
     display: flex;
     flex-wrap: wrap;
@@ -12,15 +12,19 @@ main {
 header, footer {
     text-align: center;
 }
-
-code {
+/*Fix all the code snippets to look the same*/
+.code {
     flex-wrap: wrap;
+    display: block;
+    border: 50px solid teal;
+    background-color: teal;
+    border-radius: 1em;
 }
 
 .header-description {
     text-align: center;
 }
-
+/*Moved the H2 to separate styling and position changes from its child elements*/
 h2 {
     background-color: #404040;
     outline: #cecece;
@@ -36,9 +40,9 @@ h2 {
 section h2 {
     text-align: center;
 }
-
+/*main content cards specific styling; make sure everything fits within its given space*/
 section {
-    background-color: rgb(78, 78, 119);
+    /* background-color: rgb(78, 78, 119); */
     margin: 1em;
     padding: 1em;
     border-radius: 1em;
@@ -46,4 +50,14 @@ section {
     height: 300px;
     outline: #cecece;
     border: solid;
+    block-size: fit-content;
 }
+
+/*When the screen size changes.......*/
+@media screen and (min-width:992px) { 
+
+    main {
+
+    }
+}
+    
