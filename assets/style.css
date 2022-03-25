@@ -1,0 +1,49 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #cecece;
+    background-color: #404040;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header, footer {
+    text-align: center;
+}
+
+code {
+    flex-wrap: wrap;
+}
+
+.header-description {
+    text-align: center;
+}
+
+h2 {
+    background-color: #404040;
+    outline: #cecece;
+    border: solid;
+    padding: 5px;
+    border-radius: .5em;
+    position: relative;
+    bottom: 50px;
+    /* max-width: 250px;
+    text-align: ; */
+}
+
+section h2 {
+    text-align: center;
+}
+
+section {
+    background-color: rgb(78, 78, 119);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    flex: 1 0 300px;
+    height: 300px;
+    outline: #cecece;
+    border: solid;
+}
